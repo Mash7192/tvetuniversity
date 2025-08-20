@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Higher Education Portal - Universities & TVET Colleges</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2845967324948785"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>South African Higher Education Institutions</h1>
+        <p>Find universities and TVET colleges across all 9 provinces</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for universities or TVET colleges...">
+        <button onclick="searchInstitutions()">Search</button>
+    </div>
+
+    <div class="province-map">
+        <button class="province-map-btn" onclick="filterByProvince('Eastern Cape')">Eastern Cape</button>
+        <button class="province-map-btn" onclick="filterByProvince('Free State')">Free State</button>
+        <button class="province-map-btn" onclick="filterByProvince('Gauteng')">Gauteng</button>
+        <button class="province-map-btn" onclick="filterByProvince('KwaZulu-Natal')">KwaZulu-Natal</button>
+        <button class="province-map-btn" onclick="filterByProvince('Limpopo')">Limpopo</button>
+        <button class="province-map-btn" onclick="filterByProvince('Mpumalanga')">Mpumalanga</button>
+        <button class="province-map-btn" onclick="filterByProvince('North West')">North West</button>
+        <button class="province-map-btn" onclick="filterByProvince('Northern Cape')">Northern Cape</button>
+        <button class="province-map-btn" onclick="filterByProvince('Western Cape')">Western Cape</button>
+    </div>
+
+    <div class="category-tabs">
+        <div class="category-tab active" onclick="filterInstitutions('all')">All Institutions</div>
+        <div class="category-tab" onclick="filterInstitutions('university')">Universities</div>
+        <div class="category-tab" onclick="filterInstitutions('tvet')">TVET Colleges</div>
+    </div>
+
+    <div class="province-container" id="institutions-container">
+        <!-- Content will be loaded by JavaScript -->
+    </div>
+
+    <footer>
+        <p>&copy; 2025 South African Higher Education Portal. All rights reserved.</p>
+        <p>If the Institutions you are looking for is not Available, please send WhatsApp to <a href="https://wa.me/+27848293591" target="_blank">Support</a>.</p>
+        <p>This site is not affiliated with any government department. For official information, please visit <a href="https://www.dhet.gov.za/" target="_blank">DHET</a>.</p>
+    </footer>
+
+</body>
+</html>
